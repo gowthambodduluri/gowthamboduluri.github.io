@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+
+<script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+	<div id="registerpage">
+<h1 class="display-4 mt-3" style="text-align: center">Register Event</h1>
+<div class="container bg-light mt-4 registerpagecontainer" style="border-radius: 7px;">
+			  <div class="row registerpagerow">
+				  <div class="col-12 col-lg-6 " >
+			<div class="form-group mt-2">
+             <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Full Name</span>
+            </div>
+                <input type="text" placeholder="Full Name" class="form-control">
+              </div>
+					  </div>
+              <div class="form-group mt-4">
+                 <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Contact No</span>
+            </div>
+                <input type="text" placeholder="Contact No" class="form-control">
+				  </div>
+              </div>
+		 <div class="form-group mt-4">
+                 <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="">Email</span>
+            </div>
+                <input type="email" placeholder="Email" class="form-control">
+				  </div>
+              </div>
+			   <div class="form-group">
+				   <div class="row mb-2">
+				   <div class="col-9">
+				   <label for="Event">Select Event</label>
+					   </div>
+					   <div class="col-3"><button class="btn btn-light addevent" type="button" style="float: right" ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"  style="float: right">
+  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+</svg></button></div>
+				   </div >
+				   <div class="eventlist">
+				  <div class="row firstitem">
+				   <div class="col-6">
+                <select class="form-control">
+				   <option>Marriage</option>
+					<option>Birthday</option>
+					<option>Engagement</option>
+				   </select>
+					   </div>
+					  <div class="col-5">
+					  <input type="date" placeholder="dateofevent" class="form-control">
+					  </div>
+					  <div class="col-1 m-auto pl-0 " ><a href="#" disabled="disabled"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+						  </svg></a></div>
+					  </div>
+				   </div>
+              </div>
+					  
+				  </div>
+				  <div class="col-12 col-lg-6 order-2 pdfwidth" ><object data="Sub Contractor Agreement.pdf" type="application/pdf" width="" id="pdfview"  height="400px">
+Example fallback content: This browser does not support PDFs. Please download the PDF to view it: Download PDF.
+</object>
+					  </div>
+				  </div>
+		<div class="row acceptterms">
+			<div class="col-8">
+						<div class="form-group">
+                <label for="info"  style="display: block;text-align: center">Enter you full name to agree all terms and conditions</label>
+                <input type="text" placeholder="Full Name to agree all terms" class="form-control">
+              </div>
+        </div>
+			<div class="col-4 ">
+				<button class="btn btn-primary" id="registerbutton" >Register</button>
+			</div>
+			</div>
+			
+
+	</div>
+
+	</div>
+            
+
+
+  
+</body>
+</html>

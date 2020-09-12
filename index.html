@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ravi Photo studio</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+
+<script type="text/javascript" src="script.js"></script>
+
+	
+</head>
+
+<body>
+
+<!--Navigation Bar-->
+<nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark " id="navigationbar" >
+  <div class="container-fluid" > <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"> <a class="nav-link active" href="#carouselExampleIndicators">Home</a> </li>
+		  <li class="nav-item"> <a class="nav-link " href="#registration">Registration</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#pricing">Pricing</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#aboutus">About us</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Contact</a> </li>
+		 <li class="nav-item dropdown" id="signindropdown" >
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+</svg></a>
+    <div class="dropdown-menu dropdown-menu-right"  style="min-width: 5rem" >
+                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#loginModal">Sign in</a>
+                        <a href="#" class="dropdown-item" data-toggle="modal" data-target="#signupmodal">Sign up</a>
+                    </div>
+
+		  </li>
+		  <li class="nav-item dropdown" id="profile" style="display: none;min-width: 5rem">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+</svg></a>
+		  
+		  			         <div class="dropdown-menu dropdown-menu-right"  >
+                        <p class="dropdown-item"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M10 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm6 5c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+</svg> Ravi Studio</p>
+                        <a href="index.html" class="dropdown-item"  >Logout</a>
+                    </div>
+		  </li>
+		  
+		  
+<!--		<li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#loginModal"><svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+</svg></a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+	
+    <div class="modal fade" id="loginModal">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" id="login">Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	    <div class="modal fade" id="signupmodal">
+      <div class="modal-dialog  modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Sign up</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="firstname">First Name</label>
+                <input type="text" placeholder="First Name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name</label>
+                <input type="text" placeholder="Last Name" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" placeholder="Email Address" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="confirmpassword">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" class="form-control">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">Sign up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--Image slider-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner" id="maincarousel">
+    <div class="carousel-item maincorouselitem active " data-interval=""> <img src="stephen-leonardi-qRz_kXJKCc8-unsplash.jpg" class="d-block w-100 h-100" alt="..."> </div>
+    <div class="carousel-item maincorouselitem" data-interval=""> <img src="toyamakanna-H_D-Kscai28-unsplash.jpg" class="d-block w-100 h-100" alt="..."> </div>
+    <div class="carousel-item maincorouselitem" data-interval=""> <img src="hua-ling-RXDTb_XyQho-unsplash.jpg" class="d-block w-100 h-100" alt="..."> </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"> <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a> <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"> <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span> </a> </div>
+
+
+<div id="registration">
+	<h1 class="display-4 heading">Registration</h1>
+	<div class="container-fluid " style="margin-top: 45px;margin-bottom:40px;">
+	<div class="row " id="registrationrow">
+	<div class="col" >
+	<img src="glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg" alt="image" width="100%" height="100%" class="rounded img-fluid" style="position: relative" >
+	<div class="imagecls"><a href="register.html" id="registeranchor"><h1 class="display-4" id="registerh1"><u>Register with us</u></h1></a></div>
+</div>
+
+	<div class="col " id="registercarousel" >
+		<div id="slider" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#slider" data-slide-to="0" class="active"></li>
+    <li data-target="#slider" data-slide-to="1"></li>
+    <li data-target="#slider" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner minislider ">
+    <div class="carousel-item active">
+      <img src="amanda-mocci-Zyp3t67rrP4-unsplash.jpg" class="d-block w-100 rounded img-fluid" alt="...">
+    </div>
+    <div class="carousel-item minislider">
+      <img src="chuttersnap-ZZOCECWiwBI-unsplash.jpg" class="d-block w-100 rounded img-fluid" alt="...">
+    </div>
+    <div class="carousel-item minislider ">
+      <img src="nicolas-lb-uVSyr0EUaLY-unsplash.jpg" class="d-block w-100 rounded img-fluid" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" data-target="#slider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" data-target="#slider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+		
+	  </div>
+	</div>
+	</div>
+	</div>
+	
+ <!--   <div class="modal fade" id="RegisterModal" >
+      <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Register Event</h5>
+            <button class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <!--<form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Username" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password" class="form-control">
+              </div>
+            </form>-->
+			<!--  <div class="container">
+			  <div class="row">
+				  <div class="col-12 col-lg-5 " >
+				<div class="form-group">
+					<label for="fullname">Full Name</label>
+					<input type="text" placeholder="Full Name" class="form-control">
+				  </div>
+              <div class="form-group">
+                <label for="dateofbirth">DOB</label>
+                <input type="date" placeholder="Date of Birth" class="form-control">
+              </div>
+			   <div class="form-group">
+				   <div class="row mb-2">
+				   <div class="col-9">
+				   <label for="Event">Select Event</label>
+					   </div>
+					   <div class="col-3"><button class="btn btn-light addevent" type="button" style="float: right" ><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg"  style="float: right">
+  <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+</svg></button></div>
+				   </div >
+				   <div class="eventlist">
+				  <div class="row firstitem">
+				   <div class="col-6">
+                <select class="form-control">
+				   <option>Marriage</option>
+					<option>Birthday</option>
+					<option>Engagement</option>
+				   </select>
+					   </div>
+					  <div class="col-5">
+					  <input type="date" placeholder="dateofevent" class="form-control">
+					  </div>
+					  <div class="col-1 m-auto pl-0 " ><a href="#" disabled="disabled"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-dash-circle" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+  <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+						  </svg></a></div>
+					  </div>
+				   </div>
+              </div>
+					  
+				  </div>
+				  <div class="col-12 col-lg-7 order-2 pdfwidth" ><object data="Sub Contractor Agreement.pdf" type="application/pdf" width="" id="pdfview"  height="450px">
+Example fallback content: This browser does not support PDFs. Please download the PDF to view it: Download PDF.
+</object>
+					  </div>
+				  </div>
+			  </div>
+          </div>
+			          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+<div id="pricing"> 
+<h1 class="heading">Pricing</h1>	
+<div class="container" style="height: 460px;border: 2px solid black ; margin-top: 30px"></div>
+</div>
+<div id="aboutus">
+	<h1 class="heading">About us</h1>
+	<div class="container mt-5">
+		<div class="row">
+	<div   class="col d-flex justify-content-center" id="maps">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3868.8085295786896!2d79.8501435143156!3d14.147351591816928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4ce3934af7d881%3A0xd97626f2c77157a3!2sRavi%20Studio!5e0!3m2!1sen!2sin!4v1598882641765!5m2!1sen!2sin" width="300" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+		<div class="col address">
+			<h1 style="text-align: center">Ravi Studio</h1>
+			<h4 style="text-align: center">Gandhi bomma center, Raja Veedhi</h4>
+			<h4 style="text-align: center">Gudur, SPSR Nellore District</h4>
+			<h4 style="text-align: center">Andhra Pradesh 524101</h4>
+			<h4 style="text-align: center">Contact: 9876543210</h4>
+		</div>
+		</div>
+		
+	</div>
+	</div>
+		<br>
+	<br><br>
+	<div>
+	
+	</div>
+
+</body>
+</html>
