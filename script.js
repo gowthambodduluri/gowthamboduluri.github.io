@@ -2,7 +2,7 @@
 
 
 $(document).ready(function () {
-  $('a[href*="#"]').on('click', function (e) {
+  $('.navbar-nav>li>a[href*="#"]').on('click', function (e) {
     $('html,body').animate({
       scrollTop: $($(this).attr('href')).offset().top - 95
     }, 500);
@@ -62,4 +62,15 @@ $(document).ready(function () {
 	   $(".nav-item").find(".active").removeClass("active");
 	   $(this).addClass("active");
 	});
+});
+
+
+
+$(document).ready(function () {
+	$("#gallerylinks li").click(function(){
+		
+		var target = $(this).attr('rel');		
+		$(".gallerydiv").removeClass("d-block");
+		$("#"+target).addClass("d-block");
+});
 });

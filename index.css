@@ -155,5 +155,13 @@
 
 
 
+.displaynone {
+	display: none
+}
+
+
+.displaycls {
+	display: block;
+}
 
 
