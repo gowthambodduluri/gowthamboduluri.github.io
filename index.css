@@ -111,9 +111,7 @@
 
 
 @media (max-width: 575px) {
-	#registercarousel{
-		display: none;
-	}
+
 	#registerlink{
 		height: 358px;
 		margin-left: 20px;
@@ -156,3 +154,7 @@
 
 
 
+
+#registercarousel {
+	background-attachment: fixed;
+}

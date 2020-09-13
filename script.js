@@ -1,6 +1,4 @@
 // JavaScript Document
-
-
 $(document).ready(function () {
   $('.navbar-nav>li>a[href*="#"]').on('click', function (e) {
     $('html,body').animate({
@@ -8,6 +6,9 @@ $(document).ready(function () {
     }, 500);
     e.preventDefault();
   });
+	 });
+
+$(document).ready(function () {
 
   $('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
