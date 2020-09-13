@@ -11,15 +11,15 @@
 	background-color: #000000 !important;
 	
 }
-.nav-link{
+.navlinkclr{
 	color: #ABABAB !important;
 }
 
-.nav-link:hover{
+.navlinkclr:hover{
 	color: #8C8C8C !important;
 }
 
-.active{
+.activenavele{
 	color: white !important;
 }
 
@@ -154,14 +154,5 @@
 
 
 
-
-.displaynone {
-	display: none
-}
-
-
-.displaycls {
-	display: block;
-}
 
 

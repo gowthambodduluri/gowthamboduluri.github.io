@@ -58,19 +58,21 @@ $(document).ready(function () {
 })
 
 $(document).ready(function () {
-	$(".nav-link").on("click", function(){
-	   $(".nav-item").find(".active").removeClass("active");
-	   $(this).addClass("active");
+	$(".navbar-nav>li>a").on("click", function(){
+	   $(".nav-item").find(".activenavele").removeClass("activenavele");
+	   $(this).addClass("activenavele");
 	});
 });
 
 
 
 $(document).ready(function () {
-	$("#gallerylinks li").click(function(){
+	$("#gallerylinks li a").click(function(){
 		
 		var target = $(this).attr('rel');		
 		$(".gallerydiv").removeClass("d-block");
 		$("#"+target).addClass("d-block");
+		$(".nav-item").find(".active").removeClass("active");
+	   $(this).addClass("active");
 });
 });
