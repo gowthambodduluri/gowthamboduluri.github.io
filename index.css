@@ -111,6 +111,9 @@
 
 
 @media (max-width: 575px) {
+		#registercarousel{
+		display: none;
+	}
 
 	#registerlink{
 		height: 358px;
